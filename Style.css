@@ -12,6 +12,12 @@ header{
     color: white;
     padding: 20px 0px;
     text-align: center;
+
+    /* Aplicando Flexbox no header */
+    display: flex;  /* Ativa Flexbox */
+    justify-content: space-between;  /* Separa nome e menu */
+    align-items: center; /* Alinha no centro verticalmente */
+    flex-wrap: wrap; /* Permite quebrar linhas em telas pequenas */
 }
 
 header h1 {
@@ -20,8 +26,14 @@ header h1 {
 
 header nav {
     margin-top: 10px;
+
+    /* Flexbox no header nav */
+    display: flex; /* Links lado a lado */
+    gap: 15px; /* Espaço entre os links */
 }
 
+
+/*
 header nav a {
  color: white;
  text-decoration: none;
