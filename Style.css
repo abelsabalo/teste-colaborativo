@@ -32,14 +32,38 @@ header nav {
     gap: 15px; /* Espaço entre os links */
 }
 
+/* Aplicando Gird. Estilo para grandes projetos*/
+.projects-gird {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
 
-/*
+.project-item{
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-sizing:  0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+
+    /* Responsividade */
+    @media (max-width: 600px)
+}
+
+
+
 header nav a {
  color: white;
  text-decoration: none;
  margin: 0 10px;
  
  font-weight: bold; 
+
+ /* Aplicando Gird  */
+ display: block;
+ margin: 10px 0;
 }
 
 header nav a:hover {
@@ -54,13 +78,13 @@ main {
 section {
     margin-bottom: 20px;
 }
-
+/*
 section h2 {
     color: #333;
     font-size: 24px;
 }
 
-/* Estilo para a lista de projectos */
+/* Estilo para a lista de projectos 
 ul {
     list-style-type: square;
     padding-left: 20px;
@@ -69,6 +93,7 @@ ul {
 ul li {
     font-size: 18px;
 }
+
 
 /* Estilo do formulário */
 form {
